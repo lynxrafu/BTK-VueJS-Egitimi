@@ -10,9 +10,13 @@
 <body>
   <div id="firstApp">Merhaba {{message}}</div>
   <script>
-    const { createApp } = Vue
+    const { createApp } = Vue //Kısa method yani demek istiyor ki
+    // Vue objesinden createApp methodounu al ve createApp variablına ata.
     createApp({
-      data() {
+      data() {//Burda da create app methodu bir obje aıyor {} dan dolayı ve data methodunu veriyoruz biz bu objeye ve return metohdu Vue messageı içinde olan bir obje döndürüyor.
+
+
+      
         return {
           message: 'Vue!'
         }
