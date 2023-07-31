@@ -1,6 +1,25 @@
 const app = Vue.createApp(
-  {
-    template:'<h2> '
+  {//Burda iki parantez arasında aldığımızda variable olarak kullanabiliriz.
+    template:`
+    <h2>{{baslik}}</h2>
+    <h3>{{icerik}}</h3>
+    <p>{{yorumSayisi}}</p>
+    
+    
+    
+    
+    
+    `,
+    data(){//create app içereisindeki data fonksyionu içerisinde kullanılacak datalar belirlenebilir.Retrun edebileceği değeri vererek başlarız.
+
+      return {
+        baslik:'Vue ders',
+        icerik:'Vue 3 konuları',
+        yorumSayisi : 9
+      }
+    
+
+    }
   }
 );
   
